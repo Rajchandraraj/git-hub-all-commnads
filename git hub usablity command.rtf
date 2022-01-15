@@ -1,0 +1,496 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fmodern\fprq1 Lucida Console;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;\red0\green191\blue191;\red96\green96\blue255;\red191\green0\blue0;\red64\green255\blue255;\red64\green255\blue64;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs18\lang9\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\par
+\cf0 $ git config --global user.name vishalj1412\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\par
+\cf0 $ git config --global user.email vishaljagtap753@gmail.com\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\par
+\cf0 $ git config --global user.email\par
+vishaljagtap753@gmail.com\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\par
+\cf0 $  git init\par
+Initialized empty Git repository in C:/Users/HP/mycode/git/.git/\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ ls -lart\par
+total 8\par
+drwxr-xr-x 1 HP 197121 0 Aug 19 07:34 \cf5 ..\cf0 /\par
+drwxr-xr-x 1 HP 197121 0 Aug 19 07:37 \cf5 sources\cf0 /\par
+drwxr-xr-x 1 HP 197121 0 Aug 19 09:38 \cf5 .\cf0 /\par
+drwxr-xr-x 1 HP 197121 0 Aug 19 09:38 \cf5 .git\cf0 /\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $  git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        \cf6 sources/\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ mv sources/* .\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ ls\par
+m.sh  \cf5 sources\cf0 /\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $  git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        \cf6 m.sh\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git add m.sh\par
+warning: LF will be replaced by CRLF in m.sh.\par
+The file will have its original line endings in your working directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+Changes to be committed:\par
+  (use "git rm --cached <file>..." to unstage)\par
+        \cf1 new file:   m.sh\par
+\par
+\par
+HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git commit\par
+[master (root-commit) ef3815e] Initial commit\par
+ 1 file changed, 5 insertions(+)\par
+ create mode 100644 m.sh\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+nothing to commit, working tree clean\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ touch a.sh m.jana l.html\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ ls\par
+a.sh  l.html  m.jana  m.sh  \cf5 sources\cf0 /\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        \cf6 a.sh\par
+\cf0         \cf6 l.html\par
+\cf0         \cf6 m.jana\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git add *\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+        \cf1 new file:   a.sh\par
+\cf0         \cf1 new file:   l.html\par
+\cf0         \cf1 new file:   m.jana\par
+\par
+\par
+HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ cat l.html\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ nano l.html\par
+Error in /etc/nanorc on line 237: Error expanding /usr/share/nano/*.nanorc: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+        \cf1 new file:   a.sh\par
+\cf0         \cf1 new file:   l.html\par
+\cf0         \cf1 new file:   m.jana\par
+\par
+\cf0 Changes not staged for commit:\par
+  (use "git add <file>..." to update what will be committed)\par
+  (use "git restore <file>..." to discard changes in working directory)\par
+        \cf6 modified:   l.html\par
+\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $  git add l.html\par
+warning: LF will be replaced by CRLF in l.html.\par
+The file will have its original line endings in your working directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+        \cf1 new file:   a.sh\par
+\cf0         \cf1 new file:   l.html\par
+\cf0         \cf1 new file:   m.jana\par
+\par
+\par
+HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git commit -m "Add more files"\par
+[master aa2a541] Add more files\par
+ 3 files changed, 1 insertion(+)\par
+ create mode 100644 a.sh\par
+ create mode 100644 l.html\par
+ create mode 100644 m.jana\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+nothing to commit, working tree clean\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ nano a.sh\par
+Error in /etc/nanorc on line 237: Error expanding /usr/share/nano/*.nanorc: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes not staged for commit:\par
+  (use "git add <file>..." to update what will be committed)\par
+  (use "git restore <file>..." to discard changes in working directory)\par
+        \cf6 modified:   a.sh\par
+\par
+\cf0 no changes added to commit (use "git add" and/or "git commit -a")\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git checkout a.sh\par
+Updated 1 path from the index\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ got status\par
+bash: got: command not found\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+nothing to commit, working tree clean\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git log\par
+\cf3 commit aa2a541a319dc5994560bd9ad3db62a852e3cab6 (\cf7 HEAD -> \cf8 master\cf3 )\par
+\cf0 Author: vishalj1412 <vishaljagtap753@gmail.com>\par
+Date:   Thu Aug 19 10:07:27 2021 +0530\par
+\par
+    Add more files\par
+\par
+\cf3 commit ef3815e74cda36f4f8a9740070b712788987df87\par
+\cf0 Author: vishalj1412 <vishaljagtap753@gmail.com>\par
+Date:   Thu Aug 19 09:54:26 2021 +0530\par
+\par
+    Initial commit\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $  ls\par
+a.sh  l.html  m.jana  m.sh  \cf5 sources\cf0 /\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git rm --chached m.java\par
+error: unknown option `chached'\par
+usage: git rm [<options>] [--] <file>...\par
+\par
+    -n, --dry-run         dry run\par
+    -q, --quiet           do not list removed files\par
+    --cached              only remove from the index\par
+    -f, --force           override the up-to-date check\par
+    -r                    allow recursive removal\par
+    --ignore-unmatch      exit with a zero status even if nothing matched\par
+    --pathspec-from-file <file>\par
+                          read pathspec from file\par
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character\par
+\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ ls\par
+a.sh  l.html  m.jana  m.sh  \cf5 sources\cf0 /\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git rm --chached m.jana\par
+error: unknown option `chached'\par
+usage: git rm [<options>] [--] <file>...\par
+\par
+    -n, --dry-run         dry run\par
+    -q, --quiet           do not list removed files\par
+    --cached              only remove from the index\par
+    -f, --force           override the up-to-date check\par
+    -r                    allow recursive removal\par
+    --ignore-unmatch      exit with a zero status even if nothing matched\par
+    --pathspec-from-file <file>\par
+                          read pathspec from file\par
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character\par
+\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ ls\par
+a.sh  l.html  m.jana  m.sh  \cf5 sources\cf0 /\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+nothing to commit, working tree clean\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git rm --cached m.jana\par
+rm 'm.jana'\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+        \cf1 deleted:    m.jana\par
+\par
+\cf0 Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        \cf6 m.jana\par
+\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git add m.jana\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+nothing to commit, working tree clean\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git rm m.jana\par
+rm 'm.jana'\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+        \cf1 deleted:    m.jana\par
+\par
+\par
+HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ cd ..\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode\par
+\cf0 $ cd practice\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ ls\par
+\cf8 dice.sh\cf0 *            \cf8 pawarof2.sh\cf0 *                          \cf8 unitcon.sh\cf0 *\par
+\cf8 dice1.sh\cf0 *           \cf8 printaddoftwodiceno.sh\cf0 *\par
+\cf8 magicnoupto100.sh\cf0 *  \cf8 random5numbers2digitandsumandavg.sh\cf0 *\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ nano unitcon.sh\par
+Error in /etc/nanorc on line 237: Error expanding /usr/share/nano/*.nanorc: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ ./unitcon.sh\par
+bash: ./unitcon.sh: bin/bash: bad interpreter: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ bash unitcon.sh\par
+enter the no12\par
+ft\par
+unitcon.sh: line 10: syntax error near unexpected token `)'\par
+unitcon.sh: line 10: `inch)'\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ nano unitcon.sh\par
+Error in /etc/nanorc on line 237: Error expanding /usr/share/nano/*.nanorc: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ ./unitcon.sh\par
+bash: ./unitcon.sh: bin/bash: bad interpreter: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ bash unitcon.sh\par
+enter the no12\par
+ft\par
+unitcon.sh: line 10: syntax error near unexpected token `)'\par
+unitcon.sh: line 10: `"inch")'\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ nano unitcon.sh\par
+Error in /etc/nanorc on line 237: Error expanding /usr/share/nano/*.nanorc: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ bash unitcon.sh\par
+enter the no12\par
+ft\par
+unitcon.sh: line 10: syntax error near unexpected token `)'\par
+unitcon.sh: line 10: `"inch")'\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ nano unitcon.sh\par
+Error in /etc/nanorc on line 237: Error expanding /usr/share/nano/*.nanorc: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ bash unitcon.sh\par
+enter the no12\par
+inch\par
+144\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ bash unitcon.sh\par
+enter the no12\par
+ft\par
+1\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ nano unitcon.sh\par
+Error in /etc/nanorc on line 237: Error expanding /usr/share/nano/*.nanorc: No such file or directory\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/practice\par
+\cf0 $ cd ..\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode\par
+\cf0 $ cd git\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git bransh firstbranch\par
+git: 'bransh' is not a git command. See 'git --help'.\par
+\par
+The most similar command is\par
+        branch\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git branch firstbranch\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git checkout firstbranch\par
+Switched to branch 'firstbranch'\par
+D       m.jana\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (firstbranch)\par
+\cf0 $ git status\par
+On branch firstbranch\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+        \cf1 deleted:    m.jana\par
+\par
+\par
+HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (firstbranch)\par
+\cf0 $ git add m.jana\par
+fatal: pathspec 'm.jana' did not match any files\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (firstbranch)\par
+\cf0 $ git status\par
+On branch firstbranch\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+        \cf1 deleted:    m.jana\par
+\par
+\par
+HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (firstbranch)\par
+\cf0 $ git checkout -f\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (firstbranch)\par
+\cf0 $ git status\par
+On branch firstbranch\par
+nothing to commit, working tree clean\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (firstbranch)\par
+\cf0 $ git remote\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (firstbranch)\par
+\cf0 $ git chechout master\par
+git: 'chechout' is not a git command. See 'git --help'.\par
+\par
+The most similar command is\par
+        checkout\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (firstbranch)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git remote add origin {{\field{\*\fldinst{HYPERLINK https://github.com/vishalj1412/git.git }}{\fldrslt{https://github.com/vishalj1412/git.git\ul0\cf0}}}}\f0\fs18\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git remote\par
+origin\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0 $ git remote -v\par
+origin  {{\field{\*\fldinst{HYPERLINK https://github.com/vishalj1412/git.git }}{\fldrslt{https://github.com/vishalj1412/git.git\ul0\cf0}}}}\f0\fs18  (fetch)\par
+origin  {{\field{\*\fldinst{HYPERLINK https://github.com/vishalj1412/git.git }}{\fldrslt{https://github.com/vishalj1412/git.git\ul0\cf0}}}}\f0\fs18  (push)\par
+\par
+\cf1 HP@DESKTOP-LE1G7AM \cf2 MINGW64 \cf3 ~/mycode/git\cf4  (master)\par
+\cf0\f1\fs22\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+NEED TO INSTALL JAVA8\par
+Neha Bhola11:47 AM\par
+neha.bhola@bridgelabz.com, 8928492564\par
+Ayushi11:47 AM\par
+ayushi.sinha@bridgelabz.com 9835514368\par
+Sunil Patil11:48 AM\par
+I. Java 8 Platform, Standard Edition Installation Guide URL:\par
+\tab {{\field{\*\fldinst{HYPERLINK https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html }}{\fldrslt{https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html\ul0\cf0}}}}\f1\fs22\par
+\par
+II. Download the Eclipse IDE for Java Developers package from the following URL:\par
+\tab {{\field{\*\fldinst{HYPERLINK https://eclipse.org/downloads/eclipse-packages/ }}{\fldrslt{https://eclipse.org/downloads/eclipse-packages/\ul0\cf0}}}}\f1\fs22\par
+\par
+III. Git Bash Installation URL:\par
+\tab 1 Windows\par
+\tab\tab {{\field{\*\fldinst{HYPERLINK https://git-scm.com/download/win }}{\fldrslt{https://git-scm.com/download/win\ul0\cf0}}}}\f1\fs22\par
+\par
+\tab 2. For all platforms: \par
+\tab\tab {{\field{\*\fldinst{HYPERLINK https://git-scm.com/downloads }}{\fldrslt{https://git-scm.com/downloads\ul0\cf0}}}}\f1\fs22\par
+\tab\tab\par
+Kickoff\par
+}
+ 
